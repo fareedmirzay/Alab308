@@ -8,7 +8,6 @@ const n4 = 5;
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
-
 console.log( `The numbers add up to 50:${isSum50}`);
 
 // Check two: at least two odd numbers
@@ -17,8 +16,8 @@ console.log( `The numbers add up to 50:${isSum50}`);
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 
-
-
+const allNumberDivisibleBy5 = [n1, n2, n3].every(num => num % 5 === 0);
+console.log(`All numbers are divisible by 5:${allNumberDivisibleBy5}`);
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
