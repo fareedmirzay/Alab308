@@ -26,6 +26,8 @@ console.log(`There are atleast two odd numbers here: ${MustHaveLeastTwoOdd}`);
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 
+const allNumbersLessThan25 = [n1, n2, n3, n4].every(num => num <= 25);
+console.log(`All the numbers are 25 and/or less than 25: ${allNumbersLessThan25}`);
 
 
 
