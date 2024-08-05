@@ -9,6 +9,8 @@ const n4 = 5;
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
 
+console.log( `The numbers add up to 50:${isSum50}`);
+
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
