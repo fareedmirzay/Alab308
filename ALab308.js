@@ -8,6 +8,7 @@ const n4 = 5;
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
+
 console.log( `The numbers add up to 50:${isSum50}`);
 
 // Check two: at least two odd numbers
@@ -16,13 +17,17 @@ console.log( `The numbers add up to 50:${isSum50}`);
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 
-const allNumberDivisibleBy5 = [n1, n2, n3].every(num => num % 5 === 0);
-console.log(`All numbers are divisible by 5:${allNumberDivisibleBy5}`);
+const oddNumbersCount = [n1, n2, n3, n4].filter(num => num % 2 !==0.).length;
+const MustHaveLeastTwoOdd = oddNumbersCount >= 2;
+console.log(`There are atleast two odd numbers here: ${MustHaveLeastTwoOdd}`);
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+
+
+
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -47,3 +52,9 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+
+
+
+// const allNumberDivisibleBy5 = [n1, n2, n3].every(num => num % 5 === 0);
+// console.log(`All numbers are divisible by 5:${allNumberDivisibleBy5}`);
