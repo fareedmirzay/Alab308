@@ -63,6 +63,26 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 
 
-// Check to see if all numbers are divisible by 5
+//1. Check to see if all numbers are divisible by 5
 const allNumberDivisibleBy5 = [n1, n2, n3].every(num => num % 5 === 0);
 console.log(`All numbers are divisible by 5:${allNumberDivisibleBy5}`);
+
+
+//2. // Check if the first number is larger than the last
+const isFirstLargerThanLast = n1 > n4;
+console.log(`The first number is larger than the last: ${isFirstLargerThanLast}`);
+
+
+// //3. Arithmetic chain
+const result = ((n2 - n1) * n3) % n4;
+console.log(`The Arithmentic chain results are as follows: ${result}`);
+
+
+//4. Change the way isOver25 calculates to avoid the NOT operator
+
+
+const allNumbersUnderOrEqualsLessThan25 = [n1, n2, n3, n4].every(num => num <= 25);
+console.log(`All the numbers are 25 or less, which is without using NOT: ${allNumbersUnderOrEqualsLessThan25}`);
+
+
+
