@@ -59,8 +59,10 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
+// Additions Checks for this assignment!!!!!!!!!!!!!!
 
 
 
-// const allNumberDivisibleBy5 = [n1, n2, n3].every(num => num % 5 === 0);
-// console.log(`All numbers are divisible by 5:${allNumberDivisibleBy5}`);
+// Check to see if all numbers are divisible by 5
+const allNumberDivisibleBy5 = [n1, n2, n3].every(num => num % 5 === 0);
+console.log(`All numbers are divisible by 5:${allNumberDivisibleBy5}`);
