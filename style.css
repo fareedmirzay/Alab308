@@ -1,4 +1,15 @@
 body {
     font-family: sans-serif;
   }
+
   
+
+/* 
+  Write an if..else statement for the following requirements:
+
+  If a learner gets 90 or higher: console.log("A")
+  If a learner get 80 or above: console.log("B")
+  If a learner get 70 or above: console.log("C")
+  If a learner get 55 or above: console.log("D")
+  Any grade lower than 55: console.log("F")
+   */
